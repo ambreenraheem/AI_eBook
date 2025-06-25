@@ -1,0 +1,220 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPrnQtpc5DkAn777CcJHVyg",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ambreenraheem/AI_eBook/blob/main/Prompt_Engineering_Book_codanics.md\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Codanics**\n",
+        "Date: 26-June-2025\n",
+        "\n",
+        "### Unlocking AI Power 💡: A Guide to Prompt Engineering for Data Scientists & AI Developers in Pakistan\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "L2uCkvD3l3e_"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "The world of Artificial Intelligence (AI) is evolving at lightning speed ⚡, and Large Language Models (LLMs) like OpenAI’s GPT series or Google’s Gemini are leading the charge. For data scientists and AI developers right here in Pakistan – from the bustling streets of Karachi to the historic heart of Lahore – mastering communication with these powerful tools is becoming essential. This skill is Prompt Engineering: the art and science of crafting precise instructions (prompts) to get the exact responses you need from LLMs.\n",
+        "\n",
+        "This guide, brought to you by Codanics, will explore why prompt engineering is a game-changer for data professionals in Pakistan, dive into core techniques, showcase practical, locally relevant applications, and offer best practices to help you supercharge your work with LLMs. 🚀"
+      ],
+      "metadata": {
+        "id": "tJPg-eCemNCg"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Why Does Prompt Engineering Matter for Data Scientists & AI Developers in Pakistan? 🤔\n",
+        "Your core skills in statistics, Python, R, SQL, and machine learning are the bedrock. But think of prompt engineering as the ultimate power-up 💪! Here’s why it’s crucial for the Pakistani tech scene:\n",
+        "\n",
+        "### **1. Boost Productivity tenfold:** Automate tedious tasks! Generate boilerplate code, write documentation drafts, explain complex algorithms like XGBoost, or summarize lengthy research papers in minutes, not hours. ⏱️\n",
+        "### **2. Enhance Problem Solving:** Use LLMs as your AI co-pilot 🧑‍✈️. Brainstorm solutions for predicting traffic patterns on Shahrah-e-Faisal in Karachi, debug tricky Python code for a Lahore-based e-commerce site, or get suggestions for visualizing customer demographics in Islamabad.\n",
+        "### **3. Unlock New Capabilities:** Tackle challenges previously out of reach. Generate synthetic customer data reflecting Pakistani market nuances, draft initial reports on agricultural yields in Punjab 🌾, or extract insights from Urdu text data.\n",
+        "### **4. Stay Competitive:** The AI revolution is here. Professionals in Pakistan who master LLM interaction will have a significant edge in the job market and drive innovation within their companies. 📈\n",
+        "\n",
+        "For the vibrant tech community across Pakistan, embracing prompt engineering means building smarter AI applications, streamlining data science workflows, and contributing to world-class projects, right from home."
+      ],
+      "metadata": {
+        "id": "1Yz4-qBzmS5f"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Core Prompt Engineering Techniques 🛠️\n",
+        "## Getting the best results from an LLM requires more than just asking simple questions. Master these essential techniques:\n",
+        "\n",
+        "### **1. Zero-Shot Prompting:** Ask directly without examples.\n",
+        "Example:\n",
+        "\n",
+        "Explain the difference between supervised and unsupervised learning in simple terms.\n",
+        "### **2.Few-Shot Prompting:** Guide the LLM with a few examples.\n",
+        "Example:\n",
+        "\n",
+        "Analyze sentiment of these customer reviews for a Karachi restaurant:\n",
+        "\n",
+        "Review: “The biryani was amazing, best I’ve had!”\n",
+        "\n",
+        "Sentiment: Positive\n",
+        "Review: “Service was very slow, waited 30 mins for water.”\n",
+        "\n",
+        "Sentiment: Negative\n",
+        "\n",
+        "Review: “Food was okay, but the ambiance was nice.”\n",
+        "\n",
+        "Sentiment:\n",
+        "\n",
+        "### **3.Chain-of-Thought (CoT) Prompting:** Encourage step-by-step reasoning for complex tasks.\n",
+        "Example:\n",
+        "\n",
+        "Q: A Lahore clothing brand sold 1200 kurtas in Week 1. Sales increased by 15% in Week 2. How many kurtas were sold in Week 2? Let’s think step by step.\n",
+        "### **4.Role Playing:** Assign a persona to the LLM for more relevant responses.\n",
+        "Example:\n",
+        "\n",
+        "Act as a data analyst for a Pakistani telecom company. Suggest 3 KPIs to track customer churn based on usage data.\n",
+        "### **5. Providing Context:** Supply background information for better answers.\n",
+        "Example:\n",
+        "\n",
+        "I’m analyzing ride-sharing data from Lahore (columns: ‘RideID’, ‘PickupTime’, ‘DropoffTime’, ‘Fare’, ‘PickupLocation’, ‘DropoffLocation’). Suggest Python code using pandas to calculate the average ride duration for trips starting near MM Alam Road.\n",
+        "### **6. Specifying Output Format:** Request structured outputs (e.g., lists, tables, JSON).\n",
+        "Example:\n",
+        "\n",
+        "List the top 5 Python libraries for data visualization. Provide the answer as a numbered list."
+      ],
+      "metadata": {
+        "id": "M2qd4TFCmmv2"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Types of Prompt Engineers** 👩‍💻👨‍💻\n",
+        "Prompt engineering is a versatile field, with professionals specializing based on their domain and use cases:\n",
+        "\n",
+        "### 1. Data Science Prompt Engineer: Crafts prompts for data analysis, code generation, and model evaluation.\n",
+        "### 2. Business/Domain Prompt Engineer: Designs prompts for specific industries (finance, healthcare, e-commerce) to extract insights or automate workflows.\n",
+        "### 3. Creative Prompt Engineer: Focuses on generating content, marketing copy, or creative writing.\n",
+        "### 4. Research Prompt Engineer: Develops advanced prompting techniques for academic or industrial AI research.\n",
+        "### 5. Product/UX Prompt Engineer: Integrates LLMs into products, ensuring prompts deliver reliable, user-friendly outputs.\n",
+        "Each role blends technical skill, domain knowledge, and creativity to maximize LLM value."
+      ],
+      "metadata": {
+        "id": "Dx8_EtzupG0y"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# **Practical Applications in Pakistan’s Data Science & AI Scene 🇵🇰**\n",
+        "## Let’s ground these techniques with local examples:\n",
+        "\n",
+        "### Code Generation & Debugging:\n",
+        "Write a Python script using Scikit-learn to train a simple linear regression model predicting housing prices in Karachi based on ‘AreaSqFt’ and ‘Bedrooms’. 🏘️\n",
+        "This Python code for analyzing sales data from a Faisalabad textile mill is throwing a KeyError: [Paste Code Snippet]. Identify the likely cause and fix it. 🧵\n",
+        "### Data Exploration & Analysis:\n",
+        "Suggest SQL queries to analyze customer purchasing patterns from an e-commerce dataset (‘Orders’ table with ‘CustomerID’, ‘ProductID’, ‘OrderDate’, ‘City’) focusing on Lahore and Karachi. 🛒\n",
+        "Explain the results of this sentiment analysis performed on Urdu tweets related to a recent cricket match. Positive: 65%, Negative: 25%, Neutral: 10%. 🏏\n",
+        "### Text Summarization & Information Extraction:\n",
+        "Summarize this news article about the IT export growth in Pakistan: [Paste Article Text or Link]. Focus on key statistics and government initiatives. 📰\n",
+        "Extract all company names mentioned in this business report about the Karachi Stock Exchange (PSX): [Paste Text].\n",
+        "### Synthetic Data Generation:\n",
+        "Generate 20 realistic examples of patient feedback for a hospital appointment booking app used in Islamabad, including positive and negative comments. 🏥\n",
+        "### Documentation & Report Writing:\n",
+        "Write the ‘Methodology’ section for a report analyzing the impact of load-shedding on small businesses in Lahore, based on survey data. 📄\n",
+        "Draft an email to a client explaining the performance metrics (Accuracy, Precision, Recall) of a machine learning model developed for their needs. 📧"
+      ],
+      "metadata": {
+        "id": "sDl6CgTXpkOZ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Tools & Platforms 💻\n",
+        "Access these powerful LLMs via:\n",
+        "\n",
+        "OpenAI API: GPT-3.5, GPT-4, GPT-4.1 etc.\\\n",
+        "Google AI Studio / Vertex AI: Gemini models.\\\n",
+        "Hugging Face 🤗: Hub for open-source models.\\\n",
+        "Microsoft Azure OpenAI Service: Enterprise solutions.\\\n",
+        "Anthropic: Claude models."
+      ],
+      "metadata": {
+        "id": "37cEbclLqp5v"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Best Practices for Effective Prompting ✨\n",
+        "### Be Crystal Clear & Specific: No vague requests!\n",
+        "### Context is King 👑: Give the LLM the background it needs.\n",
+        "### Iterate, Iterate, Iterate! Refine your prompts. Don’t settle for the first output. 🔄\n",
+        "### Demand the Format You Need: JSON, Markdown, Python list, bullet points? Ask!\n",
+        "### Assign Roles: Guide the LLM’s expertise and tone.\n",
+        "### Break It Down: Use multiple prompts for complex tasks or ask for step-by-step thinking.\n",
+        "### Experiment Wildly! Try different phrasings and techniques. 🎉"
+      ],
+      "metadata": {
+        "id": "nIdQIF0Uqt9q"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Challenges and Considerations ⚠️\n",
+        "### LLMs are amazing, but be aware:\n",
+        "\n",
+        "### Hallucinations (Making Stuff Up): LLMs can be confidently wrong. Always verify critical information! ✅\n",
+        "### Bias: Models learn from data, which can contain biases. Watch out for skewed or unfair outputs.\n",
+        "### Cost 💰: API usage often has costs. Monitor your usage.\n",
+        "### Data Privacy 🔒: NEVER paste sensitive personal, financial, or proprietary company data into public LLM tools without understanding their data usage policies. Prioritize privacy!\n",
+        "### Critical Evaluation is Non-Negotiable: Use your expert judgment. Validate results, debug code, and ensure outputs are accurate and ethical."
+      ],
+      "metadata": {
+        "id": "hXfstiu2rMfx"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Conclusion: Empowering Your Data Science Journey with Codanics 🚀\n",
+        "### Prompt engineering isn’t just a fancy term; it’s a core skill for modern data scientists and AI developers in Pakistan. By mastering LLM communication, you can amplify your productivity, solve more complex challenges, and lead AI innovation.\n",
+        "\n",
+        "### Start experimenting today! Use these techniques in your projects. Ask an LLM to help analyze data from the Pakistan Bureau of Statistics, generate Python code for a data cleaning task, or brainstorm marketing slogans for a local startup."
+      ],
+      "metadata": {
+        "id": "c0CPcGk6reSW"
+      }
+    }
+  ]
+}
